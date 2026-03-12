@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Deleter | Pocketbase Cleanup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Space+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-blobs"></div>
+    <main class="container">
+        <header>
+            <h1>Only CCIM</h1>
+        </header>
+
+        <section class="input-section">
+            <div class="input-group">
+                <input type="text" id="targetId" placeholder="Enter ID..." autocomplete="off">
+                <button id="deleteBtn">Delete</button>
+            </div>
+        </section>
+
+        <section class="log-section">
+            <div class="log-header">
+                <span>Operation Log</span>
+                <span id="statusIndicator" class="status-idle">Idle</span>
+            </div>
+            <div id="logContent" class="log-content">
+                <p class="log-msg system">Waiting for instruction...</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
